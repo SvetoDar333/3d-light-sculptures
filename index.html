@@ -4,72 +4,134 @@
     <meta charset="UTF-8">
     <title>СветоДар | Объемные световые фигуры и иллюминация</title>
     
-    <!-- Исправленный тег Pinterest -->
+    <!-- Ваш тег Pinterest -->
     <meta name="p:domain_verify" content="7b94c39c4b2dc317e0b84a8774794a6c"/>
     
     <meta name="description" content="Производство крупногабаритных 3D световых фигур, LED-деревьев и световых арок для городского оформления и коммерческих пространств.">
     
-    <!-- Стили для темного фона (Вариант А) -->
     <style>
         body {
-            background-color: #0d1117; /* Глубокий темный фон */
-            color: #ffffff; /* Белый текст */
+            /* Радиальный градиент: имитация света в темноте */
+            background: radial-gradient(circle at 50% 0%, #1a2a42 0%, #080a0f 80%);
+            color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 50px 20px;
             text-align: center;
+            min-height: 100vh;
         }
+        
+        /* Светящийся заголовок */
         h1 {
-            color: #4da3ff; /* Голубой акцент */
-            font-size: 3em;
+            color: #ffffff;
+            font-size: 3.5em;
             margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px rgba(77, 163, 255, 0.5), 0 0 20px rgba(77, 163, 255, 0.3);
         }
+        
         h2 {
-            color: #c9d1d9;
-            font-weight: normal;
+            color: #a3b8cc;
+            font-weight: 300;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
         }
-        p {
-            max-width: 800px;
-            margin: 15px auto;
-            line-height: 1.6;
+        
+        /* Сетка преимуществ для B2B */
+        .features-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto 50px auto;
+            flex-wrap: wrap;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            width: 250px;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(77, 163, 255, 0.4);
+        }
+        
+        .feature-card h3 {
+            color: #4da3ff;
+            font-size: 1.1em;
+            margin-top: 0;
+        }
+        
+        .feature-card p {
+            font-size: 0.9em;
             color: #8b949e;
+            line-height: 1.5;
+            margin-bottom: 0;
         }
+
         .catalog-section {
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 1px solid #30363d;
+            padding-top: 20px;
         }
+        
+        /* Светящаяся кнопка */
         .download-btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            background-color: #0056b3;
+            margin-top: 15px;
+            padding: 18px 40px;
+            background: linear-gradient(135deg, #0056b3, #003d82);
             color: #ffffff;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 30px;
             font-weight: bold;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 15px rgba(0, 86, 179, 0.5);
+            transition: all 0.3s ease;
+            border: 1px solid #4da3ff;
         }
+        
         .download-btn:hover {
-            background-color: #007bff;
+            box-shadow: 0 0 25px rgba(77, 163, 255, 0.8), 0 0 10px rgba(77, 163, 255, 0.5) inset;
+            transform: scale(1.02);
         }
     </style>
 </head>
 <body>
     
     <h1>СветоДар</h1>
-    <h2>Производство световых фигур для B2G и B2B</h2>
+    <h2>СВЕТОВЫЕ ФИГУРЫ И ИЛЛЮМИНАЦИЯ B2G & B2B</h2>
     
-    <p>Крупногабаритные 3D конструкции, световые консоли и праздничная иллюминация для благоустройства городских и коммерческих объектов.</p>
-    <p>Полное портфолио проектов, визуальные концепции и мудборды доступны на нашей официальной странице в Pinterest.</p>
+    <!-- Блок триггеров доверия -->
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3>Каркасы повышенной прочности</h3>
+            <p>Используем  окрашенную сталь. Конструкции устойчивы к ветровым нагрузкам и коррозии.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Защита от влаги IP67</h3>
+            <p>Световой шнур повышенного свечения. Надежная работа в условиях снега, дождя и перепадов температур.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Работа под ключ</h3>
+            <p>Соблюдение сроков, полный пакет закрывающих документов для муниципальных и коммерческих тендеров.</p>
+        </div>
+    </div>
     
     <div class="catalog-section">
-        <h3 style="color: #ffffff;">Каталог продукции</h3>
-        <p>Ознакомьтесь с полным ассортиментом наших LED-арок и 3D-фигур в формате PDF.</p>
+        <h3 style="color: #ffffff; font-size: 1.5em; margin-bottom: 5px;">Актуальный каталог 2026</h3>
+        <p style="color: #a3b8cc; margin-bottom: 25px;">Скачайте PDF-презентацию с полным ассортиментом LED-арок и 3D-фигур</p>
         
         <!-- Кнопка скачивания PDF -->
-        <a href="catalog-svetodar-2026.pdf" class="download-btn" download>Скачать каталог PDF</a>
+        <a href="catalog-svetodar-2026.pdf" class="download-btn" download>Скачать каталог</a>
     </div>
 
 </body>
