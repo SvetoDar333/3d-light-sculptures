@@ -10,24 +10,25 @@
     <meta name="description" content="Производство крупногабаритных 3D световых фигур, LED-деревьев и световых арок для городского оформления и коммерческих пространств.">
     
     <style>
-        /* НОВЫЙ ФОН: Инженерная световая сетка (Вариант 3) */
+        /* НОВЫЙ ФОН: Северное сияние (Анимированный перелив) */
         body {
-            background-color: #080a0f;
-            /* Едва заметная неоновая сетка */
-            background-image: 
-              linear-gradient(rgba(77, 163, 255, 0.05) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(77, 163, 255, 0.05) 1px, transparent 1px);
-            background-size: 40px 40px; /* Размер ячеек сетки */
-            
-            /* Центральное мягкое свечение */
-            box-shadow: inset 0 0 200px rgba(0, 86, 179, 0.15);
-            
+            /* Анимированный градиент */
+            background: linear-gradient(45deg, #050b14, #0a1f3d, #00122e, #050b14);
+            background-size: 400% 400%;
+            animation: glowBG 15s ease infinite;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 50px 20px;
             text-align: center;
             min-height: 100vh;
+        }
+        
+        /* Этот блок отвечает за плавное движение */
+        @keyframes glowBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         
         h1 {
@@ -111,7 +112,7 @@
             transform: scale(1.02);
         }
 
-        /* --- НОВЫЙ БЛОК: Мессенджеры --- */
+        /* --- БЛОК: Мессенджеры --- */
         .contact-section {
             padding-top: 40px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
