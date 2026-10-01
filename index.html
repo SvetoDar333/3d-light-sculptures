@@ -11,7 +11,6 @@
     
     <style>
         body {
-            /* Радиальный градиент: имитация света в темноте */
             background: radial-gradient(circle at 50% 0%, #1a2a42 0%, #080a0f 80%);
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,7 +20,6 @@
             min-height: 100vh;
         }
         
-        /* Светящийся заголовок */
         h1 {
             color: #ffffff;
             font-size: 3.5em;
@@ -39,7 +37,6 @@
             letter-spacing: 1px;
         }
         
-        /* Сетка преимуществ для B2B */
         .features-grid {
             display: flex;
             justify-content: center;
@@ -79,9 +76,9 @@
 
         .catalog-section {
             padding-top: 20px;
+            margin-bottom: 50px;
         }
         
-        /* Светящаяся кнопка */
         .download-btn {
             display: inline-block;
             margin-top: 15px;
@@ -103,6 +100,80 @@
             box-shadow: 0 0 25px rgba(77, 163, 255, 0.8), 0 0 10px rgba(77, 163, 255, 0.5) inset;
             transform: scale(1.02);
         }
+
+        /* --- НОВЫЙ БЛОК: Мессенджеры --- */
+        .contact-section {
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-title {
+            color: #ffffff;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .contact-subtitle {
+            color: #a3b8cc;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .messengers-grid {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .messenger-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 25px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            min-width: 200px;
+        }
+
+        /* Кнопка WhatsApp */
+        .btn-wa {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.3);
+            border: 1px solid #25D366;
+        }
+        .btn-wa:hover {
+            box-shadow: 0 0 25px rgba(37, 211, 102, 0.7);
+            transform: translateY(-3px);
+        }
+
+        /* Кнопка Telegram */
+        .btn-tg {
+            background: linear-gradient(135deg, #0088cc, #005f8f);
+            box-shadow: 0 0 15px rgba(0, 136, 204, 0.3);
+            border: 1px solid #0088cc;
+        }
+        .btn-tg:hover {
+            box-shadow: 0 0 25px rgba(0, 136, 204, 0.7);
+            transform: translateY(-3px);
+        }
+
+        /* Кнопка Max */
+        .btn-max {
+            background: linear-gradient(135deg, #8a2be2, #4b0082); /* Глубокий фиолетовый акцент */
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+            border: 1px solid #8a2be2;
+        }
+        .btn-max:hover {
+            box-shadow: 0 0 25px rgba(138, 43, 226, 0.7);
+            transform: translateY(-3px);
+        }
     </style>
 </head>
 <body>
@@ -110,15 +181,15 @@
     <h1>СветоДар</h1>
     <h2>СВЕТОВЫЕ ФИГУРЫ И ИЛЛЮМИНАЦИЯ B2G & B2B</h2>
     
-    <!-- Блок триггеров доверия -->
+    <!-- Блок преимуществ -->
     <div class="features-grid">
         <div class="feature-card">
             <h3>Каркасы повышенной прочности</h3>
-            <p>Используем  окрашенную сталь. Конструкции устойчивы к ветровым нагрузкам и коррозии.</p>
+            <p>Используем алюминий и окрашенную сталь. Конструкции устойчивы к ветровым нагрузкам и коррозии.</p>
         </div>
         <div class="feature-card">
-            <h3>Защита от влаги IP67</h3>
-            <p>Световой шнур повышенного свечения. Надежная работа в условиях снега, дождя и перепадов температур.</p>
+            <h3>Защита от влаги IP65</h3>
+            <p>Профессиональный LED-неон и дюралайт. Надежная работа в условиях снега, дождя и перепадов температур.</p>
         </div>
         <div class="feature-card">
             <h3>Работа под ключ</h3>
@@ -126,12 +197,24 @@
         </div>
     </div>
     
+    <!-- Секция Каталога -->
     <div class="catalog-section">
         <h3 style="color: #ffffff; font-size: 1.5em; margin-bottom: 5px;">Актуальный каталог 2026</h3>
         <p style="color: #a3b8cc; margin-bottom: 25px;">Скачайте PDF-презентацию с полным ассортиментом LED-арок и 3D-фигур</p>
-        
-        <!-- Кнопка скачивания PDF -->
         <a href="catalog-svetodar-2026.pdf" class="download-btn" download>Скачать каталог</a>
+    </div>
+
+    <!-- Секция Заявки в мессенджеры -->
+    <div class="contact-section">
+        <h3 class="contact-title">Нужен точный расчет проекта?</h3>
+        <p class="contact-subtitle">Пришлите нам параметры площадки или фото примера — мы подготовим смету в течение дня</p>
+        
+        <div class="messengers-grid">
+            <!-- Замените решетки # на ваши реальные ссылки -->
+            <a href="https://max.ru/u/f9LHodD0cOKD28IvzdgS5VW2VECGhecAcpHkcu6PycMd1i6r4kHCIxhHD_c" class="messenger-btn btn-max">Получить расчет в Max</a>
+            <a href="[https://wa.me/79150346991](https://wa.me/79150346991)" class="messenger-btn btn-wa">Получить расчет в Whatsapp</a>
+            <a href="[https://t.me/MenTor_ws](https://t.me/MenTor_ws)" class="messenger-btn btn-tg">Получить расчет в Telegram</a>
+        </div>
     </div>
 
 </body>
